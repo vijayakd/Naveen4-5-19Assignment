@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Naveen Assignment Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\vijay\eclipse-workspace\NaveenAssignment5April2019\testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Naveen_Assignment_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" class="hide-methods failed suite-Naveen_Assignment_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Naveen_Assignment_Test_Suite -->
+                      <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" class="show-methods failed suite-Naveen_Assignment_Test_Suite"> (show)</a> <!-- show-methods failed suite-Naveen_Assignment_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Naveen_Assignment_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaSelHousePageTest" class="method navigator-link" hash-for-method="verifyZSelHousePageTitle">verifyZSelHousePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaHomePagetest" class="method navigator-link" hash-for-method="verifyZooplaHomePagetitle">verifyZooplaHomePagetitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Naveen_Assignment_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" class="hide-methods passed suite-Naveen_Assignment_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Naveen_Assignment_Test_Suite -->
+                      <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" class="show-methods passed suite-Naveen_Assignment_Test_Suite"> (show)</a> <!-- show-methods passed suite-Naveen_Assignment_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Naveen_Assignment_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaSelHousePageTest" class="method navigator-link" hash-for-method="clickOnAgentCompanyName">clickOnAgentCompanyName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaHomePagetest" class="method navigator-link" hash-for-method="clickonsearch">clickonsearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaHomePagetest" class="method navigator-link" hash-for-method="entercity">entercity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.sampleTest" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaForSalePageTest" class="method navigator-link" hash-for-method="selectingLoctionAt">selectingLoctionAt</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaSelHousePageTest" class="method navigator-link" hash-for-method="verifyAgentcompanyname">verifyAgentcompanyname</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaSelHousePageTest" class="method navigator-link" hash-for-method="verifyAgentlogo">verifyAgentlogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Naveen_Assignment_Test_Suite" title="testsPack.ZooplaForSalePageTest" class="method navigator-link" hash-for-method="verifyZooplaForSale">verifyZooplaForSale</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Naveen_Assignment_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Naveen_Assignment_Test_Suite" class="panel Naveen_Assignment_Test_Suite">
+          <div class="suite-Naveen_Assignment_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testsPack.ZooplaHomePagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyZooplaHomePagetitle">
+                  </a> <!-- verifyZooplaHomePagetitle -->
+                  <span class="method-name">verifyZooplaHomePagetitle</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaHomePage.verify_pageTitle(ZooplaHomePage.java:26)
+	at testsPack.ZooplaHomePagetest.verifyZooplaHomePagetitle(ZooplaHomePagetest.java:30)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaHomePage.verify_pageTitle(ZooplaHomePage.java:26)
+	at testsPack.ZooplaHomePagetest.verifyZooplaHomePagetitle(ZooplaHomePagetest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+"</b><br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br>org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)<br>pagesPack.ZooplaHomePage.verify_pageTitle(ZooplaHomePage.java:26)<br>testsPack.ZooplaHomePagetest.verifyZooplaHomePagetitle(ZooplaHomePagetest.java:30)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-failed -->
+          <div class="suite-Naveen_Assignment_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testsPack.ZooplaSelHousePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyZSelHousePageTitle">
+                  </a> <!-- verifyZSelHousePageTitle -->
+                  <span class="method-name">verifyZSelHousePageTitle</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaSelHousePage.verifyZSelHousePageTitle(ZooplaSelHousePage.java:29)
+	at testsPack.ZooplaSelHousePageTest.verifyZSelHousePageTitle(ZooplaSelHousePageTest.java:47)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+... Removed 21 stack frames<br/> org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaSelHousePage.verifyZSelHousePageTitle(ZooplaSelHousePage.java:29)
+	at testsPack.ZooplaSelHousePageTest.verifyZSelHousePageTitle(ZooplaSelHousePageTest.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+"</b><br>org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)<br>org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br>org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)<br>pagesPack.ZooplaSelHousePage.verifyZSelHousePageTitle(ZooplaSelHousePage.java:29)<br>testsPack.ZooplaSelHousePageTest.verifyZSelHousePageTitle(ZooplaSelHousePageTest.java:47)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br>org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-failed -->
+          <div class="suite-Naveen_Assignment_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testsPack.ZooplaHomePagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonsearch">
+                  </a> <!-- clickonsearch -->
+                  <span class="method-name">clickonsearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="entercity">
+                  </a> <!-- entercity -->
+                  <span class="method-name">entercity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-passed -->
+          <div class="suite-Naveen_Assignment_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testsPack.sampleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f">
+                  </a> <!-- f -->
+                  <span class="method-name">f</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-passed -->
+          <div class="suite-Naveen_Assignment_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testsPack.ZooplaSelHousePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnAgentCompanyName">
+                  </a> <!-- clickOnAgentCompanyName -->
+                  <span class="method-name">clickOnAgentCompanyName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAgentcompanyname">
+                  </a> <!-- verifyAgentcompanyname -->
+                  <span class="method-name">verifyAgentcompanyname</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAgentlogo">
+                  </a> <!-- verifyAgentlogo -->
+                  <span class="method-name">verifyAgentlogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-passed -->
+          <div class="suite-Naveen_Assignment_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testsPack.ZooplaForSalePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectingLoctionAt">
+                  </a> <!-- selectingLoctionAt -->
+                  <span class="method-name">selectingLoctionAt</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyZooplaForSale">
+                  </a> <!-- verifyZooplaForSale -->
+                  <span class="method-name">verifyZooplaForSale</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Naveen_Assignment_Test_Suite-class-passed -->
+        </div> <!-- panel Naveen_Assignment_Test_Suite -->
+        <div panel-name="test-xml-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vijay\eclipse-workspace\NaveenAssignment5April2019\testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Naveen Assignment Test Suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Regression1&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;testsPack&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testsPack.sampleTest&quot;/&gt;
+      &lt;class name=&quot;testsPack.ZooplaForSalePageTest&quot;/&gt;
+      &lt;class name=&quot;testsPack.ZooplaHomePagetest&quot;/&gt;
+      &lt;class name=&quot;testsPack.ZooplaSelHousePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression1 --&gt;
+&lt;/suite&gt; &lt;!-- Naveen Assignment Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Naveen Assignment Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression1 (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Naveen Assignment Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Naveen Assignment Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Naveen_Assignment_Test_Suite');
+function tableData_Naveen_Assignment_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'clickonsearch')
+data.setCell(0, 2, 'testsPack.ZooplaHomePagetest')
+data.setCell(0, 3, 20006);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectingLoctionAt')
+data.setCell(1, 2, 'testsPack.ZooplaForSalePageTest')
+data.setCell(1, 3, 12322);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickOnAgentCompanyName')
+data.setCell(2, 2, 'testsPack.ZooplaSelHousePageTest')
+data.setCell(2, 3, 4311);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'entercity')
+data.setCell(3, 2, 'testsPack.ZooplaHomePagetest')
+data.setCell(3, 3, 281);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyAgentlogo')
+data.setCell(4, 2, 'testsPack.ZooplaSelHousePageTest')
+data.setCell(4, 3, 216);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAgentcompanyname')
+data.setCell(5, 2, 'testsPack.ZooplaSelHousePageTest')
+data.setCell(5, 3, 105);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyZooplaForSale')
+data.setCell(6, 2, 'testsPack.ZooplaForSalePageTest')
+data.setCell(6, 3, 18);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyZooplaHomePagetitle')
+data.setCell(7, 2, 'testsPack.ZooplaHomePagetest')
+data.setCell(7, 3, 18);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'f')
+data.setCell(8, 2, 'testsPack.sampleTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyZSelHousePageTitle')
+data.setCell(9, 2, 'testsPack.ZooplaSelHousePageTest')
+data.setCell(9, 3, 0);
+window.suiteTableData['Naveen_Assignment_Test_Suite']= { tableData: data, tableDiv: 'times-div-Naveen_Assignment_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <div id="times-div-Naveen_Assignment_Test_Suite">
+              </div> <!-- times-div-Naveen_Assignment_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Naveen Assignment Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Naveen_Assignment_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaHomePagetest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaSelHousePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15919 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.sampleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">47391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">f</span>
+                <span class="method-start">55780 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">55781 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaForSalePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">56505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyZooplaForSale</span>
+                <span class="method-start">80485 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">80503 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">81418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectingLoctionAt</span>
+                <span class="method-start">104883 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">117205 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaHomePagetest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyZooplaHomePagetitle</span>
+                <span class="method-start">118189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">entercity</span>
+                <span class="method-start">118223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickonsearch</span>
+                <span class="method-start">118504 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaSelHousePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAgentlogo</span>
+                <span class="method-start">138511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyZSelHousePageTitle</span>
+                <span class="method-start">138728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAgentcompanyname</span>
+                <span class="method-start">138729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnAgentCompanyName</span>
+                <span class="method-start">138835 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testsPack.ZooplaHomePagetest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">143146 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

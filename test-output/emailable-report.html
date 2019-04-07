@@ -1,50 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>TestNG:  Unit Test</title>
-<style type="text/css">
-table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
-border:1px solid #000099;padding:.25em .5em .25em .5em
-}
-table.result th {vertical-align:bottom}
-tr.param th {padding-left:1em;padding-right:1em}
-tr.param td {padding-left:.5em;padding-right:2em}
-td.numi,th.numi,td.numi_attn {
-text-align:right
-}
-tr.total td {font-weight:bold}
-table caption {
-text-align:center;font-weight:bold;
-}
-table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
-table.passed td,table tr.passedeven td {background-color: #33FF33;}
-table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
-table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
-tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
-p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
-div.shootout {padding:2em;border:3px #4854A8 solid}
-</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">33.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Naveen Assignment Test Suite</th></tr>
+<tr><td><a href="#t0">Regression1</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">119,719</td><td></td><td></td></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="passed" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">testsPack.ZooplaSelHousePageTest</td><td><a href="#m1"><b>clickOnAgentCompanyName</b>  </a></td><td class="numi">1</td><td>1554594453925</td><td class="numi">2176</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyAgentcompanyname</b>  </a></td><td class="numi">1</td><td>1554594453873</td><td class="numi">51</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyAgentlogo</b>  </a></td><td class="numi">1</td><td>1554594453795</td><td class="numi">64</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyZSelHousePageTitle</b>  </a></td><td class="numi">1</td><td>1554594453861</td><td class="numi">11</td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Naveen Assignment Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testsPack.ZooplaHomePagetest</td><td><a href="#m0">verifyZooplaHomePagetitle</a></td><td rowspan="1">1554611102579</td><td rowspan="1">21</td></tr><tr class="failedodd"><td rowspan="1">testsPack.ZooplaSelHousePageTest</td><td><a href="#m1">verifyZSelHousePageTitle</a></td><td rowspan="1">1554611132813</td><td rowspan="1">3</td></tr><tr><th colspan="4">Regression1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testsPack.ZooplaForSalePageTest</td><td><a href="#m2">selectingLoctionAt</a></td><td rowspan="1">1554611123117</td><td rowspan="1">8550</td></tr><tr class="passedeven"><td><a href="#m3">verifyZooplaForSale</a></td><td rowspan="1">1554611101745</td><td rowspan="1">16</td></tr><tr class="passedodd"><td rowspan="2">testsPack.ZooplaHomePagetest</td><td><a href="#m4">clickonsearch</a></td><td rowspan="1">1554611132819</td><td rowspan="1">10762</td></tr><tr class="passedodd"><td><a href="#m5">entercity</a></td><td rowspan="1">1554611132556</td><td rowspan="1">255</td></tr><tr class="passedeven"><td rowspan="3">testsPack.ZooplaSelHousePageTest</td><td><a href="#m6">clickOnAgentCompanyName</a></td><td rowspan="1">1554611143734</td><td rowspan="1">3807</td></tr><tr class="passedeven"><td><a href="#m7">verifyAgentcompanyname</a></td><td rowspan="1">1554611143584</td><td rowspan="1">147</td></tr><tr class="passedeven"><td><a href="#m8">verifyAgentlogo</a></td><td rowspan="1">1554611102608</td><td rowspan="1">109</td></tr><tr class="passedodd"><td rowspan="1">testsPack.sampleTest</td><td><a href="#m9">f</a></td><td rowspan="1">1554611077935</td><td rowspan="1">14</td></tr></tbody>
 </table>
-<h1>Default test</h1>
-<h2 id="m1">testsPack.ZooplaSelHousePageTest:verifyAgentlogo</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">testsPack.ZooplaSelHousePageTest:clickOnAgentCompanyName</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">testsPack.ZooplaSelHousePageTest:verifyAgentcompanyname</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">testsPack.ZooplaSelHousePageTest:verifyZSelHousePageTitle</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
+<h2>Regression1</h2><h3 id="m0">testsPack.ZooplaHomePagetest#verifyZooplaHomePagetitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaHomePage.verify_pageTitle(ZooplaHomePage.java:26)
+	at testsPack.ZooplaHomePagetest.verifyZooplaHomePagetitle(ZooplaHomePagetest.java:30)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testsPack.ZooplaSelHousePageTest#verifyZSelHousePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VIJAYA&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
+	at pagesPack.ZooplaSelHousePage.verifyZSelHousePageTitle(ZooplaSelHousePage.java:29)
+	at testsPack.ZooplaSelHousePageTest.verifyZSelHousePageTitle(ZooplaSelHousePageTest.java:47)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testsPack.ZooplaForSalePageTest#selectingLoctionAt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testsPack.ZooplaForSalePageTest#verifyZooplaForSale</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testsPack.ZooplaHomePagetest#clickonsearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testsPack.ZooplaHomePagetest#entercity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testsPack.ZooplaSelHousePageTest#clickOnAgentCompanyName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testsPack.ZooplaSelHousePageTest#verifyAgentcompanyname</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testsPack.ZooplaSelHousePageTest#verifyAgentlogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testsPack.sampleTest#f</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

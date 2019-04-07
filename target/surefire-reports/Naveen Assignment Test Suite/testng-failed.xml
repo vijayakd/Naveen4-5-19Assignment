@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Naveen Assignment Test Suite]" verbose="0">
+  <test name="Regression1(failed)">
+    <classes>
+      <class name="testsPack.ZooplaHomePagetest">
+        <methods>
+          <include name="verifyZooplaHomePagetitle"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testsPack.ZooplaHomePagetest -->
+      <class name="testsPack.sampleTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testsPack.sampleTest -->
+      <class name="testsPack.ZooplaSelHousePageTest">
+        <methods>
+          <include name="verifyZSelHousePageTitle"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testsPack.ZooplaSelHousePageTest -->
+      <class name="testsPack.ZooplaForSalePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testsPack.ZooplaForSalePageTest -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Naveen Assignment Test Suite] -->

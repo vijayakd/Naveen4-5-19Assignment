@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Naveen Assignment Test Suite">
+<listeners>
+    <listener class-name="listenersPack.ExtentreportListener" />
+
+</listeners>
+<test name="Regression1"   >
+
+  <packages>
+      <package name="testsPack" />
+   </packages>
+ </test>
+
+</suite> <!-- Suite -->
